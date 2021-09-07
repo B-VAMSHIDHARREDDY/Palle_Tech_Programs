@@ -10,9 +10,10 @@ def fun(a,b):
     print(a)
     print(b)
 fun(10,20)
-print("-------------- Example 2 -------------")
+print("-------------- Example 2 --------------")
 def fun(a,b,c):
     print(a)
     print(b)
     print(c)
 fun(10,20,30)
+print("-------------- Example 3 --------------")

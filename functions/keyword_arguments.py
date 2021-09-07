@@ -15,3 +15,9 @@ def fun(a,b,c,d):
 fun(10,c=30,b=20,d=10)
 fun(20,10,30,d=50)
 fun(d=10,a=20,c=40,b=70)
+print("------------------ Example 3 -----------------")
+def wish(name,msg):
+    print("Hello",name,msg)
+wish(name="Vamshi",msg="Good Morning")
+wish(msg="Good Morning",name="Vamshi")
+# wish(name="Vamshi","Good Morning") ==>invalid

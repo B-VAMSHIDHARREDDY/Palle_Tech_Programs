@@ -49,5 +49,25 @@ def fact(num):
 
 for i in range(1,10):
     fact(i)
+print("---------------------------Example 6 --------------------------------")
 
+# Find Prime Number or Not
+def prime_number(num):
+    prime = True
+    for i in range(2,num):
+        if num%i == 0:
+            prime = False
+            break
+    return prime
+result = prime_number(-5)
+print(result)
 
+print("---------------------------Example 7 ---------------------------------")
+def fibonacci_ser(m):
+    n1, n2 = 0, 1
+    for i in range(m):
+        print(n1,end=' ')
+        sum = n1 + n2
+        n1 = n2
+        n2 = sum
+fibonacci_ser(5)
