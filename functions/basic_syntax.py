@@ -63,6 +63,7 @@ result = prime_number(-5)
 print(result)
 
 print("---------------------------Example 7 ---------------------------------")
+# Find out the fibonacci series
 def fibonacci_ser(m):
     n1, n2 = 0, 1
     for i in range(m):
@@ -71,3 +72,16 @@ def fibonacci_ser(m):
         n1 = n2
         n2 = sum
 fibonacci_ser(5)
+print();print("---------------------------Example 8 ---------------------------------")
+n=int(input("Enter number:"))
+temp=n
+rev=0
+while(n>0):
+    dig=n%10
+    rev=rev*10+dig
+    n=n//10
+if(temp==rev):
+    print("The number is a palindrome!")
+else:
+    print("The number isn't a palindrome!")
+print("---------------------------Example 9 ---------------------------------")
