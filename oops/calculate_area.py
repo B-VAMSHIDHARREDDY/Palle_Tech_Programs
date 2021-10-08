@@ -10,6 +10,7 @@ class circle:
     def print_circumference(self):
         print(self.diameter * pi)
 c1 = circle(5)
+
 c2 = circle(10)
 c1.print_area()
 c2.print_area()
