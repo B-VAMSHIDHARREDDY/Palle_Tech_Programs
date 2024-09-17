@@ -452,3 +452,70 @@ if __name__ == "__main__":
 **Example**:
 - **Threading**: Limited by GIL; good for I/O-bound tasks.
 - **Multiprocessing**: Uses multiple processes; better for CPU-bound tasks.
+
+### 32. **Threading**
+
+**Definition**: Threading is a technique where multiple threads are created within a single process to execute tasks concurrently, sharing the same memory space.
+
+**Example**:
+```python
+import threading
+
+def print_numbers():
+    for i in range(5):
+        print(i)
+
+# Creating a thread
+thread = threading.Thread(target=print_numbers)
+thread.start()  # Starts the thread
+```
+
+### 33. **Multithreading**
+
+**Definition**: Multithreading refers to the simultaneous execution of multiple threads within the same process, allowing for parallelism and efficient use of CPU resources.
+
+**Example**:
+```python
+import threading
+
+def print_numbers():
+    for i in range(5):
+        print(i)
+
+def print_letters():
+    for letter in 'abcde':
+        print(letter)
+
+# Creating threads
+thread1 = threading.Thread(target=print_numbers)
+thread2 = threading.Thread(target=print_letters)
+
+# Starting threads
+thread1.start()
+thread2.start()
+```
+
+### 34. **Processing**
+
+**Definition**: Processing involves creating separate processes, each with its own memory space, to execute tasks independently and concurrently, providing isolation and parallelism.
+
+**Example**:
+```python
+from multiprocessing import Process
+
+def print_numbers():
+    for i in range(5):
+        print(i)
+
+def print_letters():
+    for letter in 'abcde':
+        print(letter)
+
+# Creating processes
+process1 = Process(target=print_numbers)
+process2 = Process(target=print_letters)
+
+# Starting processes
+process1.start()
+process2.start()
+```
